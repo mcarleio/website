@@ -2,7 +2,7 @@
 # Portfolio widget.
 widget = "portfolio"  # Do not modify this line!
 active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+weight = 40  # Order that this section will appear.
 
 title = "Projects"
 subtitle = ""

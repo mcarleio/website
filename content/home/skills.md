@@ -3,11 +3,11 @@
 widget = "featurette"  # Do not modify this line!
 active = true  # Activate this widget? true/false
 
-title = "Skills"
+title = "General Skills"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 7
+weight = 3
 
 # Showcase personal skills or business features.
 # 
@@ -38,78 +38,38 @@ weight = 7
 [[feature]]
   icon = "ubuntu"
   icon_pack = "fab"
-  name = "Linux User"
-  description = "75%"  
+  name = "Linux"
+  description = "80%"  
 [[feature]]
   icon = "confluence"
   icon_pack = "fab"
   name = "Confluence"
-  description = "70%"
-[[feature]]
-  icon = "slack-hash"
-  icon_pack = "fab"
-  name = "Slack & Co."
-  description = "70%"
-[[feature]]
-  icon = "html5"
-  icon_pack = "fab"
-  name = "HTML"
-  description = "70%"
-[[feature]]
-  icon = "confluence"
-  icon_pack = "fab"
-  name = "Confluence"
-  description = "70%"
+  description = "80%"
 [[feature]]
   icon = "jenkins"
   icon_pack = "fab"
   name = "CI/CD"
-  description = "60%"
-[[feature]]
-  icon = "vaadin"
-  icon_pack = "fab"
-  name = "Vaadin"
-  description = "60%"
-[[feature]]
-  icon = "feather-alt"
-  icon_pack = "fas"
-  name = "Apache Libraries"
-  description = "60%"
+  description = "70%"
 [[feature]]
   icon = "chart-bar"
   icon_pack = "fas"
   name = "Analytic and statistics"
-  description = "60%"
+  description = "70%"
 [[feature]]
   icon = "tasks"
   icon_pack = "fas"
   name = "Project management"
   description = "60%"
 [[feature]]
-  icon = "node-js"
-  icon_pack = "fab"
-  name = "NodeJS"
-  description = "40%"
-[[feature]]
   icon = "android"
   icon_pack = "fab"
   name = "Android"
-  description = "40%"
-[[feature]]
-  icon = "css3-alt"
-  icon_pack = "fab"
-  name = "CSS"
-  description = "40%"
-[[feature]]
-  icon = "angular"
-  icon_pack = "fab"
-  name = "Angular"
-  description = "30%"
+  description = "50%"
 [[feature]]
   icon = "aws"
   icon_pack = "fab"
-  name = "AWS Wannabe"
-  description = "5%"
+  name = "AWS"
+  description = "10%"
   
 
 +++
