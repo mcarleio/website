@@ -3,11 +3,11 @@
 widget = "featurette"  # Do not modify this line!
 active = true  # Activate this widget? true/false
 
-title = "Frontend Skills"
+title = "Database Skills"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 6
+weight = 5
 
 # Showcase personal skills or business features.
 # 
@@ -16,40 +16,44 @@ weight = 6
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[feature]]
-  icon = "file-alt"
+  icon = "leaf"
   icon_pack = "fas"
-  name = "Dust.JS (templating engine)"
+  name = "Oracle"
   description = "80%"
 [[feature]]
-  icon = "html5"
-  icon_pack = "fab"
-  name = "HTML"
+  icon = "leaf"
+  icon_pack = "fas"
+  name = "H2"
   description = "70%"
 [[feature]]
-  icon = "vaadin"
-  icon_pack = "fab"
-  name = "Vaadin"
+  icon = "leaf"
+  icon_pack = "fas"
+  name = "Derby"
   description = "70%"
 [[feature]]
-  icon = "css3-alt"
-  icon_pack = "fab"
-  name = "SCSS / Sass"
-  description = "50%"
+  icon = "leaf"
+  icon_pack = "fas"
+  name = "MySQL / MariaDB"
+  description = "70%"
 [[feature]]
-  icon = "angular"
-  icon_pack = "fab"
-  name = "Angular"
+  icon = "leaf"
+  icon_pack = "fas"
+  name = "PostgreSQL"
+  description = "70%"
+[[feature]]
+  icon = "leaf"
+  icon_pack = "fas"
+  name = "MongoDB"
   description = "40%"
 [[feature]]
-  icon = "code"
-  icon_pack = "fas"
-  name = "JSF (PrimeFaces / RichFaces)"
-  description = "40%"
+  icon = "hubspot"
+  icon_pack = "fab"
+  name = "Neo4j"
+  description = "30%"
 [[feature]]
-  icon = "hashtag"
+  icon = "leaf"
   icon_pack = "fas"
-  name = "Freemarker"
-  description = "20%"
-  
+  name = "Redis"
+  description = "25%"
 
 +++

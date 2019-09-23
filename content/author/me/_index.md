@@ -41,7 +41,12 @@ user_groups = ["Researchers", "Visitors"]
 
 [[education.courses]]
   course = "B.Sc. in Scientific Programming"
-  institution = "FH Aachen, Campus Jülich Research Centre"
+  institution = "University of Applied Sciences Aachen, Campus Jülich Research Centre"
+  year = 2012
+  
+[[education.courses]]
+  course = "Mathematical-Technical Software Developer"
+  institution = "Chamber of Commerce and Industry Aachen"
   year = 2012
 
 # Social/Academic Networking
@@ -89,8 +94,10 @@ Over the last years I have worked with various frameworks and technologies in th
 I designed and developed interfaces with SOAP, JMS and REST and worked with relational databases like Oracle, PostgreSQL, Derby, H2 and MariaDB. But I also used NoSQL databases like MongoDB, Neo4j and Redis.
 I am using tools like JIRA, Confluence, GitLab, Jenkins, Nexus and Docker to organize, document and support the development process.         
 
-Already during my dual Bachelor studies I did various software projects myself and successfully published a few.
-Later on, at the beginning of my Master studies, I co-founded a company with some friends in the area of developing B2B solutions for mobile devices.
+Already during my dual Bachelor studies I implemented various software projects myself and successfully published a few.
+Later on, at the beginning of my Master studies, I co-founded a company ([Bontoo Mobile Development UG](#experience)) with some friends which focused on B2B mobile apps with backend services.
 
-I gained a lot of experience through my work and the studies, but my own projects taught me much deeper understanding and practical skills!
-Besides bigger projects like [Cryptonify](/project/cryptonify) or [GetFav](/project/getfav), I also develop open source libraries like [Strix](/project/strix) and [Sciurus](/project/sciurus).
+I gained a lot of experience through my work as a software developer and my studies. However, my own projects taught me much deeper understanding and practical skills!
+Besides bigger private projects like [Cryptonify](/project/cryptonify), a platform-independent password manager,
+or [GetFav](/project/getfav), a service to obtain the favicons for any arbitrary webpage,
+I am also developing open source libraries like [Strix](/project/strix) and [Sciurus](/project/sciurus).

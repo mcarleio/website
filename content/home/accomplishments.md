@@ -29,8 +29,8 @@ date_format = "Jan 2006"
   
 [[item]]
   title = "Bachelor's degree"
-  organization = "FH Aachen"
-  certificate_url = ""
+  organization = "University of Applied Sciences Aachen"
+  certificate_url = "/cert/bachelor-certificate.pdf"
   date_start = "2009-09-01"
   date_end = "2012-08-15"
   description = ""

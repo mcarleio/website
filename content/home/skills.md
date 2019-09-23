@@ -36,6 +36,16 @@ weight = 3
   name = "JIRA"
   description = "90%"
 [[feature]]
+  icon = "jira"
+  icon_pack = "fab"
+  name = "Clean Code"
+  description = "90%"
+[[feature]]
+  icon = "jira"
+  icon_pack = "fab"
+  name = "Test Driven Development"
+  description = "80%"
+[[feature]]
   icon = "ubuntu"
   icon_pack = "fab"
   name = "Linux"
@@ -53,13 +63,18 @@ weight = 3
 [[feature]]
   icon = "chart-bar"
   icon_pack = "fas"
-  name = "Analytic and statistics"
+  name = "Analytic and Statistics"
   description = "70%"
 [[feature]]
   icon = "tasks"
   icon_pack = "fas"
-  name = "Project management"
+  name = "Project Management"
   description = "60%"
+[[feature]]
+  icon = "ubuntu"
+  icon_pack = "fab"
+  name = "Windows & Office"
+  description = "55%"  
 [[feature]]
   icon = "android"
   icon_pack = "fab"

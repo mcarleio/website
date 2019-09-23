@@ -16,20 +16,10 @@ weight = 4
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 
 [[feature]]
-  icon = "leaf"
+  icon = "vial"
   icon_pack = "fas"
-  name = "Spring Boot"
-  description = "80%"
-[[feature]]
-  icon = "java"
-  icon_pack = "fab"
-  name = "Java EE"
-  description = "80%"
-[[feature]]
-  icon = "project-diagram"
-  icon_pack = "fas"
-  name = "OSGi"
-  description = "60%"
+  name = "JUnit"
+  description = "100%"
 [[feature]]
   icon = "database"
   icon_pack = "fas"
@@ -46,10 +36,15 @@ weight = 4
   name = "AspectJ"
   description = "85%"
 [[feature]]
-  icon = "vial"
+  icon = "leaf"
   icon_pack = "fas"
-  name = "JUnit"
-  description = "100%"
+  name = "Spring Boot"
+  description = "80%"
+[[feature]]
+  icon = "java"
+  icon_pack = "fab"
+  name = "Java EE"
+  description = "80%"
 [[feature]]
   icon = "pepper-hot"
   icon_pack = "fas"
@@ -71,15 +66,14 @@ weight = 4
   name = "Apache Libraries"
   description = "75%"
 [[feature]]
-  icon = "tasks"
+  icon = "project-diagram"
   icon_pack = "fas"
-  name = "Project management"
+  name = "OSGi"
   description = "60%"
 [[feature]]
   icon = "node-js"
   icon_pack = "fab"
   name = "NodeJS"
   description = "40%"
-  
 
 +++
