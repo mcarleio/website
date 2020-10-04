@@ -71,11 +71,11 @@ diagram = false
 # Privacy pack
 #   Show a cookie consent message to visitors
 #   Anonymize IP in Google Analytics (if enabled)
-privacy_pack = false
+privacy_pack = true
 
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+edit_page = {repo_url = "", content_dir = "", repo_branch = "master", editable = {docs = false, page = false, post = false}}
 
 # Show related content at the bottom of pages?
 show_related = {docs = true, page = false, post = true, project = true, publication = true, talk = true}
@@ -169,7 +169,7 @@ abstract_length = 135
 
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_js  = []
+plugins_js  = ["matomo"]
 
 # Avatars.
 # An avatar is an image that appears next to a user's name.
@@ -276,7 +276,7 @@ plugins_js  = []
 ############################
 [cms]
   # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
-  netlify_cms = true
+  netlify_cms = false
 
 ############################
 ## Icon Pack Extensions
