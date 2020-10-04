@@ -1,52 +1,122 @@
-+++
-title = "Strix"
-date = 2017-09-23
-draft = false
+---
+# Documentation: https://wowchemy.com/docs/managing-content/
 
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = []
-
-# Project summary to display on homepage.
-summary = ""
-
-# Slides (optional).
-#   Associate this page with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
-#   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides = ""
+title: "Strix"
+summary: "A lightweight and simple transaction library using aspects."
+authors: []
+tags: []
+categories: []
+date: 2017-09-23
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
-
-# Links (optional).
-url_pdf = ""
-url_code = "https://github.com/mcarleio/strix"
-url_dataset = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
-
-# Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com"}]
+external_link: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-[image]
-  # Caption (optional)
-  caption = ""
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
 
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = ""
-+++
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+# links:
+# - name: Follow
+#   url: https://twitter.com
+#   icon_pack: fab
+#   icon: twitter
 
+url_code: "https://github.com/mcarleio/strix"
+url_pdf: ""
+url_slides: ""
+url_video: ""
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+ 
+---
+![Strix](./logo.png)
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+Strix is a lightweight and simple transaction library using aspects to do the magic.
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+## Simple Usage
+
+In short terms you have to:
+1. Include strix as dependency
+    ```xml
+    <dependency>
+        <groupId>io.mcarle</groupId>
+        <artifactId>strix</artifactId>
+        <version>1.0.1</version>
+    </dependency>
+    ```
+    
+2. Include aspectj-maven-plugin and define strix as `aspectLibrary`
+    ```xml
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+        <version>1.10</version>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>compile</goal>
+                    <goal>test-compile</goal>
+                </goals>
+            </execution>
+        </executions>
+        <configuration>
+            <complianceLevel>${maven.compiler.source}</complianceLevel>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
+            <aspectLibraries>
+                <aspectLibrary>
+                    <groupId>io.mcarle</groupId>
+                    <artifactId>strix</artifactId>
+                </aspectLibrary>
+            </aspectLibraries>
+        </configuration>
+    </plugin>
+    ```
+
+3. Start strix before you call any transactional methods 
+    ```java
+    import io.mcarle.strix.Strix;
+    import org.glassfish.jersey.servlet.ServletContainer;
+
+    public class ExampleServlet extends ServletContainer {
+    
+        @Override
+        public void destroy() {
+            super.destroy();
+            Strix.shutdown();
+        }
+    
+        @Override
+        public void init() throws ServletException {
+            Strix.startup();
+            super.init();
+        }
+    }
+    ```
+
+4. Annotate your classes or methods, which should be transactional with strix's `@Transactional`-Annotation like
+    ```java
+    import io.mcarle.strix.annotation.Transactional;
+    import static io.mcarle.strix.Strix.em;
+ 
+    @Transactional
+    public class ExampleManager {
+       public <T> T find(Class<T> entityClass, Long id) {
+            return em().find(entityClass, id);
+       }
+    }
+    ``` 
+
+## More information and example
+[https://github.com/mcarleio/strix](https://github.com/mcarleio/strix)

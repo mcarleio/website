@@ -1,55 +1,49 @@
 +++
-# Feature/Skill widget.
-widget = "featurette"  # Do not modify this line!
+# A Skills section created with the Featurette widget.
+widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
+weight = 34  # Order that this section will appear.
 
-title = "Frontend Skills"
+title = "Frontend Frameworks"
 subtitle = ""
-
-# Order that this section will appear in.
-weight = 6
 
 # Showcase personal skills or business features.
 # 
 # Add/remove as many `[[feature]]` blocks below as you like.
 # 
-# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
+# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
-[[feature]]
-  icon = "file-alt"
-  icon_pack = "fas"
-  name = "Dust.JS (templating engine)"
-  description = "80%"
-[[feature]]
-  icon = "html5"
-  icon_pack = "fab"
-  name = "HTML"
-  description = "70%"
 [[feature]]
   icon = "vaadin"
   icon_pack = "fab"
   name = "Vaadin"
-  description = "70%"
-[[feature]]
-  icon = "css3-alt"
-  icon_pack = "fab"
-  name = "SCSS / Sass"
-  description = "50%"
+  description = "&gt; 2 years (last 2018)"
 [[feature]]
   icon = "angular"
   icon_pack = "fab"
   name = "Angular"
-  description = "40%"
+  description = "&gt; 2 years"
 [[feature]]
   icon = "code"
   icon_pack = "fas"
-  name = "JSF (PrimeFaces / RichFaces)"
-  description = "40%"
-[[feature]]
-  icon = "hashtag"
-  icon_pack = "fas"
-  name = "Freemarker"
-  description = "20%"
-  
+  name = "JSF"
+  description = "&gt; 6 years (last 2016)"
+
+# Uncomment to use emoji icons.
+# [[feature]]
+#  icon = ":smile:"
+#  icon_pack = "emoji"
+#  name = "Emojiness"
+#  description = "100%"  
+
+# Uncomment to use custom SVG icons.
+# Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
+# Reference the SVG icon name (without `.svg` extension) in the `icon` field.
+# [[feature]]
+#  icon = "your-custom-icon-name"
+#  icon_pack = "custom"
+#  name = "Surfing"
+#  description = "90%"
 
 +++

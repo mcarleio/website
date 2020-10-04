@@ -1,51 +1,56 @@
-+++
-title = "GetFav.com"
-date = 2016-03-01
-draft = false
+---
+# Documentation: https://wowchemy.com/docs/managing-content/
 
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = []
-
-# Project summary to display on homepage.
-summary = ""
-
-# Slides (optional).
-#   Associate this page with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
-#   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides = ""
+title: "GetFav"
+summary: "GetFav is a simple online service to retrieve any favicon from every public website"
+authors: []
+tags: []
+categories: []
+date: 2016-03-01
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
-
-# Links (optional).
-url_pdf = ""
-url_code = ""
-url_dataset = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
-
-# Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-links = [{icon_pack = "fas", icon="link", name="Project Homepage", url = "https://getfav.com"}]
+external_link: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-[image]
-  # Caption (optional)
-  caption = ""
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
 
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = ""
-+++
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+links:
+- name: Project Homepage
+  url: https://getfav.com
+  icon_pack: fas
+  icon: link
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+---
+![GetFav](./logo.png)
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+GetFav is a simple to use online service to serve favicons for any public website. 
+
+For example, if you want to have the favicon for Google in 32px, you simply have to call `https://getfav.com/api/get?host=google.com&size=32`, which will result in ![Google](https://getfav.com/api/get?host=google.com&size=32)
+
+Once a favicon was queried, GetFav caches it for some period of time and therefore can serve future requests for the same domain much faster: instead of having to query it from the actual website, it returns the favicon directly from its cache.
+
+GetFav offers you many useful customization features like
+* query favicon in specific size
+* scale the favicon or put a frame around it
+* change MIME type, e.g. if you need a PNG instead of an ICO
+
+## More information
+See the documentation: [https://getfav.com/#!/documentation](https://getfav.com/#!/documentation)

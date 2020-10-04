@@ -1,17 +1,16 @@
 +++
 # Experience widget.
-widget = "experience"  # Do not modify this line!
+widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
+weight = 40  # Order that this section will appear.
 
 title = "Experience"
 subtitle = ""
 
-# Order that this section will appear in.
-weight = 10
-
 # Date format for experience
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
-date_format = "January 2006"
+date_format = "Jan 2006"
 
 # Experiences.
 #   Add/remove as many `[[experience]]` blocks below as you like.
@@ -54,6 +53,7 @@ date_format = "January 2006"
   date_end = "2018-12-31"
   description = """
   Worked as a full-time software developer and later on I was promoted to also manage internal and external projects as a project manager.
+  The software projects I worked on were web applications written in Java using Java EE, OSGi, etc.
   """
   
 [[experience]]
@@ -63,7 +63,7 @@ date_format = "January 2006"
   location = "Hamburg, Germany"
   date_start = "2019-01-01"
   description = """
-  Working on internal workflow systems.
+  Working on a Spring Boot Camunda web application written mainly in Kotlin with an Angular frontend, which is running on AWS.
   """
   
 [[experience]]

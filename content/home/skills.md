@@ -1,90 +1,51 @@
 +++
-# Feature/Skill widget.
-widget = "featurette"  # Do not modify this line!
+# A Skills section created with the Featurette widget.
+widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
+weight = 30  # Order that this section will appear.
 
-title = "General Skills"
+title = "Platforms"
 subtitle = ""
-
-# Order that this section will appear in.
-weight = 3
 
 # Showcase personal skills or business features.
 # 
 # Add/remove as many `[[feature]]` blocks below as you like.
 # 
-# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
-
+# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
+  
 [[feature]]
-  icon = "java"
-  icon_pack = "fab"
-  name = "Java"
-  description = "100%"
-[[feature]]
-  icon = "git"
-  icon_pack = "fab"
-  name = "Git"
-  description = "100%"
-[[feature]]
-  icon = "code"
-  icon_pack = "fas"
-  name = "IntelliJ IDEA"
-  description = "90%"
-[[feature]]
-  icon = "jira"
-  icon_pack = "fab"
-  name = "JIRA"
-  description = "90%"
-[[feature]]
-  icon = "jira"
-  icon_pack = "fab"
-  name = "Clean Code"
-  description = "90%"
-[[feature]]
-  icon = "jira"
-  icon_pack = "fab"
-  name = "Test Driven Development"
-  description = "80%"
-[[feature]]
-  icon = "ubuntu"
+  icon = "linux"
   icon_pack = "fab"
   name = "Linux"
-  description = "80%"  
-[[feature]]
-  icon = "confluence"
-  icon_pack = "fab"
-  name = "Confluence"
-  description = "80%"
-[[feature]]
-  icon = "jenkins"
-  icon_pack = "fab"
-  name = "CI/CD"
-  description = "70%"
-[[feature]]
-  icon = "chart-bar"
-  icon_pack = "fas"
-  name = "Analytic and Statistics"
-  description = "70%"
-[[feature]]
-  icon = "tasks"
-  icon_pack = "fas"
-  name = "Project Management"
-  description = "60%"
-[[feature]]
-  icon = "ubuntu"
-  icon_pack = "fab"
-  name = "Windows & Office"
-  description = "55%"  
+  description = "&gt; 10 years"
+
 [[feature]]
   icon = "android"
   icon_pack = "fab"
   name = "Android"
-  description = "50%"
+  description = "&gt; 2 years (last 2017)"
+
 [[feature]]
   icon = "aws"
   icon_pack = "fab"
   name = "AWS"
-  description = "10%"
-  
+  description = "&gt; 1 year"  
+
+# Uncomment to use emoji icons.
+# [[feature]]
+#  icon = ":smile:"
+#  icon_pack = "emoji"
+#  name = "Emojiness"
+#  description = "100%"  
+
+# Uncomment to use custom SVG icons.
+# Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
+# Reference the SVG icon name (without `.svg` extension) in the `icon` field.
+# [[feature]]
+#  icon = "your-custom-icon-name"
+#  icon_pack = "custom"
+#  name = "Surfing"
+#  description = "90%"
 
 +++

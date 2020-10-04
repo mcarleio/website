@@ -1,4 +1,6 @@
-public/
+# IDEs
 .idea/
-_gen
-*.iml
+
+# Hugo
+/resources/
+public/

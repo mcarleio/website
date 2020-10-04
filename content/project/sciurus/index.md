@@ -1,51 +1,119 @@
-+++
-title = "Sciurus"
-date = 2018-02-07
-draft = false
+---
+# Documentation: https://wowchemy.com/docs/managing-content/
 
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = []
-
-# Project summary to display on homepage.
-summary = ""
-
-# Slides (optional).
-#   Associate this page with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
-#   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides = ""
+title: "Sciurus"
+summary: "Sciurus is a collection of useful aspects like monitoring execution runtimes of methods or caching their result"
+authors: []
+tags: []
+categories: []
+date: 2018-02-07
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
-
-# Links (optional).
-url_pdf = ""
-url_code = "https://github.com/mcarleio/sciurus"
-url_dataset = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
-
-# Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com"}]
+external_link: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-[image]
-  # Caption (optional)
-  caption = ""
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: true
 
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = ""
-+++
+# Custom links (optional).
+#   Uncomment and edit lines below to show custom links.
+# links:
+# - name: Follow
+#   url: https://twitter.com
+#   icon_pack: fab
+#   icon: twitter
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+url_code: "https://github.com/mcarleio/sciurus"
+url_pdf: ""
+url_slides: ""
+url_video: ""
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+---
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+![Sciurus](./logo.png)
+Sciurus is a collection of useful aspects to
+* monitor execution runtimes of methods
+* lock method executions
+* cache method results
+* retry method executions on exceptions
+
+
+## General Usage
+
+You need to include Sciurus as dependeny and declare it as an aspect library in the `aspectj-maven-plugin`.
+
+1. Include Sciurus as dependency
+    ```xml
+    <dependency>
+        <groupId>io.mcarle</groupId>
+        <artifactId>sciurus</artifactId>
+        <version>1.1.0</version>
+    </dependency>
+    ```
+    
+2. Include aspectj-maven-plugin and define Sciurus as `aspectLibrary`
+    ```xml
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+        <version>1.11</version>
+        <executions>
+            <execution>
+                <goals>
+                    <goal>compile</goal>
+                    <goal>test-compile</goal>
+                </goals>
+            </execution>
+        </executions>
+        <configuration>
+            <complianceLevel>${maven.compiler.source}</complianceLevel>
+            <source>${maven.compiler.source}</source>
+            <target>${maven.compiler.target}</target>
+            <aspectLibraries>
+                <aspectLibrary>
+                    <groupId>io.mcarle</groupId>
+                    <artifactId>sciurus</artifactId>
+                </aspectLibrary>
+            </aspectLibraries>
+        </configuration>
+    </plugin>
+    ```
+
+## Use Case Examples
+There are a number of possible use cases for each aspect.
+
+### @Monitor
+* Notify a monitoring application
+* Find bottlenecks
+* Test the speed of a new software version before deploying it in production
+* Store execution times (e.g. in a database) and
+  * see how they evolve over time
+  * see runaway values
+  * monitor them through a MBean
+  
+### @Cache
+* Caching (surprise!)
+* Facade for various caches which can be exchanged with merely little code changes
+
+### @Lock
+* Prevent multiple storing (e.g. in databases)
+* Prevent multiple execution of long running or high cpu consuming methods (e.g. in combination with `@Cache`)
+  
+### @Retry
+* Retry storing entities into the database due to locking exceptions
+* Retry a failed connection to a web service
+* Retry a method which may lead to some random or temporary incidents
+
+
+## More information and example
+[https://github.com/mcarleio/sciurus](https://github.com/mcarleio/sciurus)
