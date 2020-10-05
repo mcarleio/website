@@ -18,7 +18,7 @@ header:
 
 | | |
 |------------------------|--------------------------------------------------------------
-| **E-mail**             | [webmaster@getfav.com](mailto:webmaster@getfav.com)
+| **E-mail**             | [webmaster@mcarle.io](mailto:webmaster@mcarle.io)
 | **Internet address**   | [mcarle.io](/)
 | **Address**            | Marcel Carlé<br>Kieler Straße 623<br>22525 Hamburg<br>Germany
 
