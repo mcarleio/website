@@ -79,9 +79,11 @@ user_groups: []
 
 Hi! My name is Marcel, I am a passionate all-round Java developer, with a focus on backend. I enjoy developing software and am curious by nature for anything around the development process.
 
-Over the last years I have worked with various frameworks and technologies in the backend (JEE, OSGi, Spring Boot, ...) and frontend (Freemarker, JSF, Vaadin, Angular, ...) area.
+Over the last years I have worked with various frameworks and technologies in the backend (Spring Boot, JEE, Quarkus, OSGi, ...) and frontend (Angular, JSF, Vaadin, ...) area.
 I designed and developed interfaces with SOAP, JMS and REST and worked with relational databases like Oracle, PostgreSQL, Derby, H2 and MariaDB. But I also used NoSQL databases like MongoDB, Neo4j and Redis.
-I am using tools like JIRA, Confluence, GitLab, Jenkins, Nexus and Docker to organize, document and support the development process.         
+Recently, I came across cloud platforms like AWS, Google Cloud and Oracle Cloud. With the help of Terraform, I learned (and {{< icon name="heart" pack="fas" >}}) defining IaaS.
+
+I am using tools like JIRA, Confluence, GitLab, Jenkins, Nexus and Docker to organize, document and support the development process.
 
 Already during my dual Bachelor studies I implemented various software projects myself and successfully published a few.
 Later on, at the beginning of my Master studies, I co-founded a company ([Bontoo Mobile Development UG](#experience)) with some friends which focused on B2B mobile apps with backend services.
