@@ -13,3 +13,7 @@ footer.site-footer {
 .card-title.text-muted {
   color:rgba(0, 0, 0, 0.7) !important;
 }
+
+.featurette-icon img.svg-icon {
+  filter: invert(26%) sepia(89%) saturate(3776%) hue-rotate(117deg) brightness(104%) contrast(91%);
+}
