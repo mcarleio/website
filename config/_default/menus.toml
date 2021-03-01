@@ -39,8 +39,8 @@
   weight = 70
 
 [[main_right]]
-  name = '<i class="fas fa-download fa-fw"></i> CV'
-  url = "cv.pdf"
+  name = '<i class="fas fa-download fa-fw"></i>&nbsp;CV'
+  url = "https://github.com/mcarleio/cv"
   weight = 10
 
 # Link to a PDF of your resume/CV from the menu.
