@@ -20,9 +20,9 @@ home_section_odd = "rgb(255, 255, 255)"
 home_section_even = "rgb(247, 247, 247)"
 
 [dark]
-menu_text_active = "#0b980b"
+  menu_text_active = "#0b980b"
 
-home_section_odd = "#1e1f25"
-home_section_even = "#131419"
+  home_section_odd = "#1e1f25"
+  home_section_even = "#131419"
 
-background = "#1e1f25"
+  background = "#1e1f25"

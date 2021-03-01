@@ -1,49 +1,45 @@
-+++
-# A Skills section created with the Featurette widget.
-widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 34  # Order that this section will appear.
+---
+# An instance of the Featurette widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: featurette
 
-title = "Frontend Frameworks"
-subtitle = ""
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 34
+
+title: Frontend Frameworks
+subtitle:
 
 # Showcase personal skills or business features.
-# 
-# Add/remove as many `[[feature]]` blocks below as you like.
-# 
-# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
-
-[[feature]]
-  icon = "vaadin"
-  icon_pack = "fab"
-  name = "Vaadin"
-  description = "&gt; 2 years (last 2018)"
-[[feature]]
-  icon = "angular"
-  icon_pack = "fab"
-  name = "Angular"
-  description = "&gt; 2 years"
-[[feature]]
-  icon = "code"
-  icon_pack = "fas"
-  name = "JSF"
-  description = "&gt; 6 years (last 2016)"
+# - Add/remove as many `feature` blocks below as you like.
+# - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
+feature:
+- name: Vaadin
+  description: '&gt; 2 years (last 2018)'
+  icon: vaadin
+  icon_pack: fab
+- name: Angular
+  description: '&gt; 2 years'
+  icon: angular
+  icon_pack: fab
+- name: JSF
+  description: '&gt; 6 years (last 2016)'
+  icon: code
+  icon_pack: fas
 
 # Uncomment to use emoji icons.
-# [[feature]]
-#  icon = ":smile:"
-#  icon_pack = "emoji"
-#  name = "Emojiness"
-#  description = "100%"  
+#- icon: ":smile:"
+#  icon_pack: "emoji"
+#  name: "Emojiness"
+#  description: "100%"  
 
 # Uncomment to use custom SVG icons.
 # Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
 # Reference the SVG icon name (without `.svg` extension) in the `icon` field.
-# [[feature]]
-#  icon = "your-custom-icon-name"
-#  icon_pack = "custom"
-#  name = "Surfing"
-#  description = "90%"
-
-+++
+#- icon: "your-custom-icon-name"
+#  icon_pack: "custom"
+#  name: "Surfing"
+#  description: "90%"
+---

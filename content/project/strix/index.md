@@ -3,9 +3,7 @@
 
 title: "Strix"
 summary: "A lightweight and simple transaction library using aspects."
-authors: []
 tags: []
-categories: []
 date: 2017-09-23
 
 # Optional external URL for project (replaces project detail page).

@@ -1,26 +1,17 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
-
-title: "Cryptonify"
-summary: "Cryptonify is a platform independent fully featured offline password manager including syncing, browser extensions and an Android App"
-authors: []
+title: Cryptonify
+summary: Cryptonify is a platform independent fully featured offline password manager including syncing, browser extensions and an Android App
 tags: []
-categories: []
 date: 2011-05-01
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
   focal_point: ""
   preview_only: true
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
 links:
 - name: Project Homepage
   url: https://marcel-carle.de/software/cryptonify/
@@ -39,6 +30,7 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
 ![Cryptonify](./logo.png)
 
 Cryptonify is a platform independent password manager written in Java. It stores the entered data encrypted with AES-256 in a local file, which you may manually sync with your devices or use the included Dropbox sync feature.

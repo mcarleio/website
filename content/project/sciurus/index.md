@@ -3,9 +3,7 @@
 
 title: "Sciurus"
 summary: "Sciurus is a collection of useful aspects like monitoring execution runtimes of methods or caching their result"
-authors: []
 tags: []
-categories: []
 date: 2018-02-07
 
 # Optional external URL for project (replaces project detail page).

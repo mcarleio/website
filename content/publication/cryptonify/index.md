@@ -1,8 +1,11 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
+title: "Linux Magazine: Master Key - Keep access data secure with Cryptonify (Issue 181/2015)"
 
-title: "Master Key - Keep access data secure with Cryptonify (Linux Magazine, Issue 181/2015)"
+# Authors
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# and it will be replaced with their full name and linked to their profile.
 authors: []
+
 date: 2015-12-01
 doi: ""
 
@@ -16,40 +19,37 @@ publishDate:
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Keep track of your login information for web services with Cryptonify"
+publication: Keep track of your login information for web services with Cryptonify
 publication_short: ""
 
-abstract: "Cryptonify puts an end to lost or forgotten access data for web services and frees you of exuberant trails of paperwork for usernames and passwords. The Java program is very well conceived and works quickly and stably. The program interface is clearly arranged and can also be operated without time-consuming training. Extensive documentation for almost every menu item eliminates ambiguities to a great extent. Thus, you no longer have any excuse to use web services with insecure access data or even using the same access data everywhere."
+abstract: Cryptonify puts an end to lost or forgotten access data for web services and frees you of exuberant trails of paperwork for usernames and passwords. The Java program is very well conceived and works quickly and stably. The program interface is clearly arranged and can also be operated without time-consuming training. Extensive documentation for almost every menu item eliminates ambiguities to a great extent. Thus, you no longer have any excuse to use web services with insecure access data or even using the same access data everywhere.
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags: []
-categories: []
+
+# Display this page in the Featured widget?
 featured: false
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
+# Custom links (uncomment lines below)
 # links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
+# - name: Custom Link
+#   url: http://example.org
 
-url_pdf: cryptonify.pdf
-url_code:
-url_dataset:
-url_poster:
-url_project:
-url_slides:
-url_source:
-url_video:
+url_pdf: '/publications/cryptonify.pdf'
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
+  caption: ''
   focal_point: ""
   preview_only: false
 

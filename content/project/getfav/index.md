@@ -3,9 +3,7 @@
 
 title: "GetFav"
 summary: "GetFav is a simple online service to retrieve any favicon from every public website"
-authors: []
 tags: []
-categories: []
 date: 2016-03-01
 
 # Optional external URL for project (replaces project detail page).

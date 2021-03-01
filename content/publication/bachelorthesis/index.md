@@ -1,8 +1,12 @@
 ---
-# Documentation: https://wowchemy.com/docs/managing-content/
+title: "Bachelor thesis: Development and Optimization of a Software for High-Performance Storage and Processing of Mass Data for an Open System Landscape"
 
-title: "Development and optimization of a software for high-performance storage and processing of mass data for an open system landscape (bachelorthesis)"
-authors: ["me"]
+# Authors
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
+# and it will be replaced with their full name and linked to their profile.
+authors:
+- me
+
 date: 2012-08-15
 doi: ""
 
@@ -16,40 +20,37 @@ publishDate:
 publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Entwicklung und Optimierung einer Software zur performanten Speicherung und Verarbeitung von Massendaten für eine offene Systemlandschaft"
+publication: Entwicklung und Optimierung einer Software zur performanten Speicherung und Verarbeitung von Massendaten für eine offene Systemlandschaft
 publication_short: ""
 
-abstract: "This thesis describes the development of a Java EE application and the optimization of individual processes of this software. Used technologies, interfaces and the structure of the software, as well as the data base, are exemplarily presented and partly illustrated with examples. After the background has been sufficiently presented, individual exemplary implementations and optimizations that have been implemented in the software will be discussed."
+abstract: This thesis describes the development of a Java EE application and the optimization of individual processes of this software. Used technologies, interfaces and the structure of the software, as well as the data base, are exemplarily presented and partly illustrated with examples. After the background has been sufficiently presented, individual exemplary implementations and optimizations that have been implemented in the software will be discussed.
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags: []
-categories: []
+
+# Display this page in the Featured widget?
 featured: false
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
+# Custom links (uncomment lines below)
 # links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
+# - name: Custom Link
+#   url: http://example.org
 
-url_pdf: bachelorthesis.pdf
-url_code:
-url_dataset:
-url_poster:
-url_project:
-url_slides:
-url_source:
-url_video:
+url_pdf: '/publications/bachelorthesis.pdf'
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
+  caption: ''
   focal_point: ""
   preview_only: false
 
