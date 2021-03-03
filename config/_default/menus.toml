@@ -9,6 +9,11 @@
   weight = 10
 
 [[main]]
+  name = "CV"
+  url = "#cv"
+  weight = 65
+
+[[main]]
   name = "Skills"
   url = "#skills"
   weight = 20
@@ -37,11 +42,6 @@
   name = "Contact"
   url = "#contact"
   weight = 70
-
-[[main_right]]
-  name = '<i class="fas fa-download fa-fw"></i>&nbsp;CV'
-  url = "https://github.com/mcarleio/cv"
-  weight = 10
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/media/resume.pdf` and uncomment the lines below.

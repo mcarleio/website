@@ -12,6 +12,10 @@ weight: 32
 title: Backend Frameworks
 subtitle:
 
+design:
+  spacing:
+    padding: ["50px", "0", "50px", "0"]
+
 # Showcase personal skills or business features.
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
