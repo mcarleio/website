@@ -12,7 +12,7 @@ subtitle: Curriculum Vitae
 
 design:
   spacing:
-    padding: ["50px", "0", "50px", "0"]
+    padding: ["80px", "0", "80px", "0"]
 
 advanced:
     css_class: "cv-container"

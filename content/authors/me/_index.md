@@ -84,7 +84,7 @@ Recently, I came across cloud platforms like AWS, Google Cloud, and Oracle Cloud
 I am using tools like JIRA, Confluence, GitLab, Jenkins, Nexus, and Docker to organize, document, support, and simplify the development process.
 
 Already during my dual Bachelor studies I implemented various software projects myself and successfully published a few.
-Later on, at the beginning of my Master studies, I co-founded a company ([Bontoo Mobile Development UG](#experience)) with some friends which focused on B2B mobile apps with backend services.
+Later on, at the beginning of my Master studies, I co-founded a company with some friends which focused on B2B mobile apps with backend services.
 
 I gained a lot of experience through my work as a software developer and my studies. However, my own projects taught me much deeper understanding and practical skills!
 Besides bigger private projects like [Cryptonify](/project/cryptonify), a platform-independent password manager,

@@ -4,7 +4,7 @@ p.powered-by {
 
 footer.site-footer {
   margin: 0;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
@@ -28,10 +28,14 @@ table {
   overflow-x: auto;
 }
 
+.page-footer {
+  background-color: #f7f7f7;
+}
+
 .cv-container {
   .cv-thumbnail-container {
     position: relative;
-    max-width: 200px;
+    max-width: 250px;
     display: inline-block;
 
     &:first-child {
