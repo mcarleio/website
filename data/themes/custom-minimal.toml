@@ -1,0 +1,28 @@
+# https://github.com/wowchemy/wowchemy-hugo-modules
+
+# Theme metadata
+name = "Minimal"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#0b980b"
+
+# Menu
+menu_primary = "rgb(20, 22, 34)"
+menu_text = "rgba(255,255,255,0.8)"
+menu_text_active = "#0b980b"
+menu_title = "#fff"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"
+
+[dark]
+  menu_text_active = "#0b980b"
+
+  home_section_odd = "#1e1f25"
+  home_section_even = "#131419"
+
+  background = "#1e1f25"
