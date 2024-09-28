@@ -20,13 +20,13 @@ design:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- name: Vaadin
-  description: '&gt; 2 years (last 2018)'
-  icon: vaadin
-  icon_pack: fab
 - name: Angular
-  description: '&gt; 3 years'
+  description: '&gt; 5 years'
   icon: angular
+  icon_pack: fab
+- name: Vaadin
+  description: '&gt; 3 years (last 2018)'
+  icon: vaadin
   icon_pack: fab
 - name: JSF
   description: '&gt; 5 years (last 2016)'

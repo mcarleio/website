@@ -36,8 +36,8 @@ feature:
   description: '&gt; 3 years (last 2019)'
   icon: database
   icon_pack: fas
-- name: Derby
-  description: '&gt; 3 years (last 2017)'
+- name: MSSQL
+  description: '&gt; 3 years'
   icon: database
   icon_pack: fas
 - name: NoSQL (Neo4j, MongoDB, Redis)

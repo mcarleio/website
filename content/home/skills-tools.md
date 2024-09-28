@@ -33,15 +33,19 @@ feature:
   icon: git
   icon_pack: fab
 - name: Docker
-  description: '&gt; 3 years'
+  description: '&gt; 5 years'
   icon: docker
   icon_pack: fab
 - name: Terraform
-  description: '&gt; 2 years'
+  description: '&gt; 3 years'
   icon: cloud
   icon_pack: fas
-- name: CI/CD
-  description: '(Jenkins, GitLab, GitHub, BitBucket)'
+- name: Gradle
+  description: '&gt; 3 years'
+  icon: hammer
+  icon_pack: fas
+- name: GitLab CI/CD
+  description: '&gt; 8 years'
   icon: truck-moving
   icon_pack: fas
 

@@ -41,9 +41,13 @@ feature:
   icon: database
   icon_pack: fas
 - name: Kotlin
-  description: '&gt; 3 years'
+  description: '&gt; 5 years'
   icon: kotlin
   icon_pack: custom
+- name: Node.JS
+  description: '&gt; 2 years'
+  icon: node-js
+  icon_pack: fab
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"

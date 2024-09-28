@@ -21,7 +21,7 @@ design:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 - name: Spring Boot
-  description: '&gt; 3 years'
+  description: '&gt; 5 years'
   icon: leaf
   icon_pack: fas
 - name: Hibernate
@@ -39,10 +39,6 @@ feature:
 - name: Java EE / Jakarta EE
   description: '&gt; 5 years (last 2015)'
   icon: java
-  icon_pack: fab
-- name: Node.JS
-  description: '&gt; 1 year'
-  icon: node-js
   icon_pack: fab
 
 # Uncomment to use emoji icons.

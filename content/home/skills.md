@@ -24,13 +24,13 @@ feature:
   description: '&gt; 13 years'
   icon: linux
   icon_pack: fab
+- name: AWS
+  description: '&gt; 3 years'
+  icon: aws
+  icon_pack: fab
 - name: Android
   description: '&gt; 2 years (last 2017)'
   icon: android
-  icon_pack: fab
-- name: AWS
-  description: '&gt; 2 years'
-  icon: aws
   icon_pack: fab
 
 # Uncomment to use emoji icons.
