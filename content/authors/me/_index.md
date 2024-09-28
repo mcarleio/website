@@ -89,4 +89,4 @@ Later on, at the beginning of my Master studies, I co-founded a company with som
 I gained a lot of experience through my work as a software developer and my studies. However, my own projects taught me much deeper understanding and practical skills!
 Besides bigger private projects like [Cryptonify](/project/cryptonify), a platform-independent password manager,
 or [GetFav](/project/getfav), a service to obtain the favicons for any arbitrary webpage,
-I am also developing open source libraries like [Strix](/project/strix) and [Sciurus](/project/sciurus).
+I am also developing open source libraries like [Konvert](/project/konvert).
