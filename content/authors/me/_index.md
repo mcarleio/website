@@ -47,9 +47,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/MarcelCarle
+#- icon: twitter
+#  icon_pack: fab
+#  link: https://twitter.com/MarcelCarle
 - icon: xing
   icon_pack: fab
   link: https://www.xing.com/profile/Marcel_Carle
@@ -68,7 +68,7 @@ social:
 #   link: media/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "hi@mcarle.io"
+email: "contact@mcarle.io"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
